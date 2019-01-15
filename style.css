@@ -1,0 +1,131 @@
+.edgehome{
+	background:url("home3.png") no-repeat ;
+	background-size:100% 100%;
+	background-color:violet;
+	color:white !important;
+	overflow-x:hidden;
+}
+footer div ul li a{
+	color:white;
+}
+.icon{
+	width:150px;
+	height:150px;
+}
+.card-img-top{
+	border-radius:50%;
+	width:200px;
+	height:200px;
+	margin:4% auto; 
+}
+.card-outer{
+	text-align:center;
+}
+.custcard{
+	margin:7% auto;
+}
+.buttonenroll{
+	margin:10% auto;
+	width:300px;
+	height:50px;
+}
+.enroll{
+	margin:11% auto;
+}
+.sign{
+	border-radius:50px;
+	width:120px;
+	box-shadow:2px 2px 5px black;
+}
+.body-home{
+	color:black !important;
+	margin:20% auto;
+}
+.service{
+	height:100%;
+}
+.body-text-head{
+	text-align:center;
+	margin-top:30%;
+}
+.nav-head{
+	font-weight:bold;
+	color:white !important;
+	font-size:25px;
+}
+.container1{
+	width:100%;
+	margin:8% auto;
+}
+.card-heading{
+	height:8px;
+	border-radius:50px;
+	background-color:#00CED1;
+	width:100%;
+}
+.buttoninfo{
+	border-radius:50px;
+	float:right;
+	width:100px;
+
+}
+.buttonsub{
+	border-radius:50px;
+	float:left;
+	width:200px;
+
+}
+.edgecard{
+	/*background-color:white;*/
+	height:250px;
+}
+.card-head{
+	font-weight:bold;
+	font-size:20px;
+	margin-bottom:5%;
+}
+.card-text{
+	margin:5% auto;
+	font-size:18px;
+}
+.card-button{
+	float:right;
+	margin-right:5%;
+}
+.nav-text{
+	color:white !important;
+	font-size:15px;
+}
+.head{
+	margin-top:15%;
+}
+.head-text{
+	font-size:45px;	
+	font-weight:bold;
+}
+.getstarted{
+	margin-top:10%;
+	float:right;
+	background-color:white;
+	width:410px;
+	border-radius:50px;
+	height:50px;
+	padding:5px;
+	border:2px solid lightblue;
+}
+.emailinput{
+	border:0px;
+	border-radius:50px 0px 0px 50px;
+	width:250px;
+	height:35px;
+	font-size:20px;
+	padding:5px;
+}
+.getbutton{
+	width:140px;
+	border-radius:50px 50px 50px 50px;
+	height:40px;
+	box-shadow:0px 2px 5px black;
+	margin-top:-2%;
+	border:0px;
+}

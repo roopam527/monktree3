@@ -1,0 +1,64 @@
+.sidebar{
+	background-color:#00CED1;
+	width:20%;
+	height:754px;
+	float:left;
+	padding:2%;
+}
+.sidebar h1{
+	color:white;
+	margin:10% auto;
+}
+.sidebar ul li{
+	color:white;
+	text-align:right;  
+}
+.sidebar ul li a{
+	color:white;
+}
+.sidebarinnerdiv{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	border:10px solid white;
+	display:inline-flex;
+	margin-left:10%; 
+	background-color:white; 
+}
+.innerline{
+	width:2px;
+	height:90px;
+	background-color:white;
+	margin-left:92%;
+}
+.personaldet{
+	width:80%;
+	height:100%;
+	overflow-y:hidden;
+	float:left;
+	color:#C0C0C0;
+}
+.personaldet h1{
+	text-align:center;
+	margin:5% auto;
+}
+.details{
+	margin-top:10%;
+}
+.details .button{
+	width:200px;
+	height:40px;
+	border-radius:50px;
+	display:block;
+	margin-left:60%; 
+	margin-top:3%;
+	font-size:20px;
+}
+.personalinput{
+	width:30%;
+	margin:2% 5%;
+	height:40px;
+	border:0px;
+	font-size:25px;
+	border-bottom:3px solid #C0C0C0;
+}

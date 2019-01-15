@@ -1,0 +1,57 @@
+		<div>
+			<div class="sidebar">
+				<h1>Edge</h1>
+				<ul type=none>
+					<div class="innerline" style="background-color:#008080"></div>
+					<li>
+						<a href="per_det">Personal Details
+						</a><div class="sidebarinnerdiv" style="background-color:#008080"></div>
+					</li>
+					<div class="innerline" style="background-color:#008080"></div>
+					<li>
+						<a href="aca_det">Academic Details
+						</a><div class="sidebarinnerdiv" style="background-color:#008080"></div>						
+					</li>
+					<div class="innerline"></div>
+					<li>
+						Plan & Packages<div class="sidebarinnerdiv"></div>
+					</li>
+					<div class="innerline"></div>
+					<li>
+						Completed<div class="sidebarinnerdiv"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="academicdet">
+				<h1>Tell us about your academics!</h1>
+				<div class="details">
+					<form ng-submit="acadet()" name="acaform">
+						<input type=text class="academicinput" name="course" placeholder="Course" ng-model="course" list="cour" required><span ng-show="acaform.course.$invalid" class="alert alert-warning">Invalid</span>
+						<input type=text class="academicinput" placeholder="Completion year" name="year" ng-model="year" required><span ng-show="acaform.year.$invalid" class="alert alert-warning">Invalid</span>						
+						
+						<input type=text class="academicinput" name="institute" placeholder="Institution" style="width:70%" ng-model="institute" list="insti" required><span ng-show="acaform.institute.$invalid" class="alert alert-warning">Invalid</span>
+
+						<input type=text class="academicinput" placeholder="Admission year" name="admission" ng-model="admission" required><span ng-show="acaform.admission.$invalid" class="alert alert-warning">Invalid</span>
+						<input type=text class="academicinput" name="branch" placeholder="Branch/Discipline" ng-model="branch" list="bran" required><span ng-show="acaform.branch.$invalid" class="alert alert-warning">Invalid</span>
+						
+						<input type=text class="academicinput" placeholder="Course duration" name="duration" ng-model="duration" required><span ng-show="acaform.duration.$invalid" class="alert alert-warning">Invalid</span>
+						<input type=text class="academicinput" placeholder="Enrollment No/Aadhar No" name="enroll" ng-model="enroll" required><span ng-show="acaform.enroll.$invalid" class="alert alert-warning">Invalid</span><br>
+						<input type=checkbox style="margin-left:5%;width:15px; height:15px" name="check" ng-model="check">&nbsp&nbsp<span ng-show="!check" class="alert alert-warning">Invalid</span>&nbsp&nbsp I have read the terms and conditions.
+						<input type="submit" ng-disabled="acaform.institute.$invalid||acaform.branch.$invalid||acaform.course.$invalid||acaform.admission.$invalid||acaform.course.$invalid||acaform.year.$invalid||acaform.duration.$invalid||acaform.enroll.$invalid||!check" class="btn btn-success button" ng-model="continue" value="Submit & Next">
+						<datalist id="insti">
+							<option ng-repeat="x in insti" value="{{ x }}">
+						</datalist>
+						<datalist id="bran">
+							<option ng-repeat="x in bran" value="{{ x }}">
+						</datalist>
+						<datalist id="cour">
+							<option>btech</option>
+							<option>diploma</option>
+						</datalist>
+					</form>
+					<div ng-show="showme">
+						{{ error_message }}
+					</div>
+				</div>
+			</div>
+		</div>

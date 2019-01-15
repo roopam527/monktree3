@@ -1,0 +1,45 @@
+		<div>
+			<div class="sidebar">
+				<h1>Edge</h1>
+				<ul type=none>
+					<div class="innerline" style="background-color:#008080"></div>
+					<li>
+						<a href="per_det">Personal Details
+						</a><div class="sidebarinnerdiv" style="background-color:#008080"></div>
+					</li>
+					<div class="innerline"></div>
+					<li>
+						Academic Details<div class="sidebarinnerdiv"></div>						
+					</li>
+					<div class="innerline"></div>
+					<li>
+						Plan & Packages<div class="sidebarinnerdiv"></div>
+					</li>
+					<div class="innerline"></div>
+					<li>
+						Completed<div class="sidebarinnerdiv"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="personaldet">
+				<h1>Let us know about you</h1>
+				<div class="details">
+					<form ng-submit="perdet()" name="perform" novalidate>
+						<input type=text class="personalinput" placeholder="Fullname" name="fullname" ng-model="fullname" required ><span ng-show="perform.fullname.$invalid" class="alert alert-warning">Invalid</span>
+						<input type=email class="personalinput" placeholder="Email" name="e_mail" ng-model="e_mail" required ><span ng-show="perform.e_mail.$invalid" class="alert alert-warning">Invalid</span>
+						<input type=text class="personalinput" placeholder="Father's Name" name="father_name" ng-model="father_name" required ><span ng-show="perform.father_name.$invalid" class="alert alert-warning">Invalid</span>
+						<input type=date class="personalinput" placeholder="D.O.B" name="dob" ng-model="dob" required><span ng-show="perform.dob.$invalid" class="alert alert-warning">Invalid</span>
+						<input type=number class="personalinput" placeholder="Contact number(Personal)" name="contact_per" ng-model="contact_per" required><span ng-show="perform.contact_per.$invalid" class="alert alert-warning">Invalid</span>
+						<input type=number class="personalinput" placeholder="Contact number(Guardian)" name="contact_gaur" ng-model="contact_guar" required><span ng-show="perform.contact_gaur.$invalid" class="alert alert-warning">Invalid</span>
+						<input type=text class="personalinput" placeholder="Address" style="width:70%" name="address" ng-model="address" required><span ng-show="perform.address.$invalid" class="alert alert-warning">Invalid</span>
+						<input type=text class="personalinput" placeholder="City" style="width:10%" name="city" ng-model="city" required><span ng-show="perform.city.$invalid" class="alert alert-warning">Invalid</span>
+						<input type=number class="personalinput" placeholder="Pin code" style="width:10%" name="pin" ng-model="pin" required><span ng-show="perform.pin.$invalid" class="alert alert-warning">Invalid</span>
+						<input type=text class="personalinput" placeholder="State" ng-model="state" required>
+						<input type="submit" name="next" class="btn btn-success button" value="Next" ng-disabled="perform.e_mail.$invalid || perform.fullname.$invalid || perform.father_name.$invalid || perform.dob.$invalid || perform.contact_per.$invalid || perform.address.$invalid || perform.city.$invalid || perform.pin.$invalid"></input>
+					</form>
+					<div ng-show="showme">
+						{{ error_message }}
+					</div>
+				</div>
+			</div>
+		</div>

@@ -1,0 +1,40 @@
+		<div class="row sign_in">
+			<div class="col-md-2"></div>
+			<div class="col-md-4">
+				<!-- <div class="outer">
+					<p class="heading">Create your account</p>
+					<center><div class="line"></div></center>
+					<p class="writeup">Sign up and start to chase your dreams</p>
+				</div> -->
+			</div>
+			<div class="col-md-4" style="background-color: white">
+				<div class="sign1">
+					<b><p class="heading1">Monktree</p></b>
+					<p class="small">Welcome back! Please login to your account</p><br>
+					<form method="post" ng-submit="signin()">
+						<input type="text" ng-model="username" placeholder="Username" id="username" class="round1 writeup1">
+						<input type="password" ng-model="pass" placeholder="Password" id="pass" class="round1 writeup1"><br><br>
+						<div class="row">
+							<div class="col-md-6">
+								<input type="checkbox" ng-model="rem">
+							<span class="small">Remember me</span>
+							<br><br><br>
+							<input type="submit" ng-model="login" value="Login" class="buttin writeup1" style="background-color: #3c3754;color: white;">
+						</div>
+						<div class="col-md-6">
+							<a href="sign_in" class="small">Forgot Password</a>
+							<br><br><br>
+							<a href="sign_up"><button style="background-color: #fff" class="buttin writeup1">Sign up</button></a>
+						</div>
+						</div>
+						<br><br>
+						<i><a href="sign_up" class="writeup1" style="color:gray">One account for All...</a></i>
+					</form>
+					<div ng-show="showme">
+						{{ error_message }}
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2" style="background-color: white"></div>
+			
+		</div>

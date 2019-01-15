@@ -1,0 +1,36 @@
+		<div class="body">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-4">
+				<div class="outer">
+					<p class="heading">Create your account</p>
+					<center><div class="line"></div></center>
+					<p class="writeup">Sign up and start to chase your dreams</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="sign11">
+					<p class="heading">Sign Up</p><br>
+					<div class="g-signin2">
+						<button ng-click="google()">Google</button>
+					</div>
+					<form ng-submit="signup()">
+						<p class="left writeup">Full Name</p>
+						<input type="text" ng-model="full_name" id="username" class="round">
+						<p class="left writeup">Email</p>
+						<input type="email" ng-model="email" id="mail" class="round">
+						<p class="left writeup">Password</p>
+						<input type="password" ng-model="pass" id="pass" class="round">
+						<br><br><br>
+						<input type="submit" ng-model="account" value="Create Account" id="account" class="round" style="background-color: #5fc4ff; color:white;box-shadow: 0px 2px 5px #5fc4ff"><br>
+						<a href="sign_in" class="writeup" style="color:black">Already have an account? Login!</a>
+					</form>
+					<div ng-show="showme">
+						{{ error_message }}
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+			
+		</div>
+	</div>

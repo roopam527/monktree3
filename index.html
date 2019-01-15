@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<script src="angular.min.js"></script>
+		<script src="angular-route.js"></script>
+		<script src="angular-animate.js"></script>
+		<script src="module.js"></script>
+		<script src="controller.js"></script>
+		<script src="signupcontroller.js"></script>
+		<script src="signincontroller.js"></script>
+		<script src="per_detcontroller.js"></script>
+		<script src="aca_detcontroller.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="sign_up.css" >
+		<link rel="stylesheet" href="sign_in.css" >
+		<link rel="stylesheet" href="personaldet.css">
+		<link rel="stylesheet" href="academicdet.css">
+		<base href="/">
+	</head>
+	<body>
+		<div ng-app="myApp" ng-controller="cntrl">
+			<ng-view></ng-view>
+		</div>
+	</body>
+</html>
