@@ -5,7 +5,7 @@ app.controller('signincntrl',function($scope,$location,$http){
 			"username" : $scope.username,
 			"password" : $scope.pass
 		};
-		$http.post("http://localhost:5000/auth/local_login",$scope.login).then(function successCallback(response){
+		$http.post("http://monktree.ap-south-1.elasticbeanstalk.com/auth/local_login",$scope.login).then(function successCallback(response){
 		$location.path("/per_det")
 		
 	},function errorCallback(response){

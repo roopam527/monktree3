@@ -14,7 +14,7 @@ app.controller('perdetcntrl',function($scope,$location,$http){
 			"pin_code" : $scope.pin,
 			"state" : $scope.state
 		};
-		$http.post("http://localhost:5000/api/save_personal_details",$scope.personal_detail).then(function successCallback(response){
+		$http.post("http://monktree.ap-south-1.elasticbeanstalk.com/api/save_personal_details",$scope.personal_detail).then(function successCallback(response){
 		$location.path("/aca_det")
 		
 		},function errorCallback(response){
